@@ -1,6 +1,10 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# SpendWise
 
-Welcome USER_NAME,
+Welcome to SpendWise, A tracking tool to your expenses!
+
+![Wireframe Outline](readmeImages/single%20line%20diagram%20outline%20of%20an%20Expense%20Tracker%20website%20without%20color.png)
+
+Welcome Navya Keelara,
 
 This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
