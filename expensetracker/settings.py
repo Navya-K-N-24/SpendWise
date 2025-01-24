@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-y=cvcm_&c6iwykd+aroq2#c0=dlcve-=*%jeojv1%#ke@@zqxp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-navyakn24-spendwise-pppu5m4dt6l.ws.codeinstitute-ide.net', 'spendwisenavya.herokuapp.com']
+ALLOWED_HOSTS = ['8000-navyakn24-spendwise-pppu5m4dt6l.ws.codeinstitute-ide.net', 'spendwisenavya-47b3e163d0fa.herokuapp.com']
 
 
 # Application definition
