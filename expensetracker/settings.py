@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-y=cvcm_&c6iwykd+aroq2#c0=dlcve-=*%jeojv1%#ke@@zqxp'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['8000-navyakn24-spendwise-pppu5m4dt6l.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['8000-navyakn24-spendwise-pppu5m4dt6l.ws.codeinstitute-ide.net', 'spendwisenavya.herokuapp.com']
 
 
 # Application definition
