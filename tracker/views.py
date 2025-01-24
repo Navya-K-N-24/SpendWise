@@ -5,3 +5,5 @@ from django.http import HttpResponse
 def home(request):
     return HttpResponse("Welcome to SpendWise!")
 
+def register(request):
+    return render(request, 'tracker/register.html')
