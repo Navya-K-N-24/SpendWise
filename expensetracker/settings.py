@@ -25,10 +25,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-y=cvcm_&c6iwykd+aroq2#c0=dlcve-=*%jeojv1%#ke@@zqxp'
+SECRET_KEY = 'your-secret-key'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get("DEBUG", "False") == "True"
+
+#DEBUG = False
 
 ALLOWED_HOSTS = ['8000-navyakn24-spendwise-pppu5m4dt6l.ws.codeinstitute-ide.net', 'spendwisenavya-47b3e163d0fa.herokuapp.com']
 
@@ -79,12 +81,12 @@ WSGI_APPLICATION = 'expensetracker.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+#DATABASES = {
+    #'default': {
+       # 'ENGINE': 'django.db.backends.sqlite3',
+       # 'NAME': BASE_DIR / 'db.sqlite3',
+   # }
+#}
 
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
@@ -125,6 +127,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
