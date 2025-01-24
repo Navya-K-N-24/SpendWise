@@ -34,6 +34,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-navyakn24-spendwise-pppu5m4dt6l.ws.codeinstitute-ide.net', 'spendwisenavya-47b3e163d0fa.herokuapp.com']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-navyakn24-spendwise-pppu5m4dt6l.ws.codeinstitute-ide.net',
+    'https://spendwisenavya-47b3e163d0fa.herokuapp.com',
+]
 
 # Application definition
 
