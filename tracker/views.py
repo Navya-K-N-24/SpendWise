@@ -1,12 +1,12 @@
 from django.shortcuts import render, redirect
 # from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
-from django.http import HttpResponse
+# from django.http import HttpResponse
 from .forms import CustomUserCreationForm
 
 # Create your views here.
-def home(request):
-    return HttpResponse("Welcome to SpendWise!")
+# def home(request):
+   # return HttpResponse("Welcome to SpendWise!")
 
 def home(request):
     return render(request, "tracker/home.html")  # Use a template for home instead of HttpResponse
