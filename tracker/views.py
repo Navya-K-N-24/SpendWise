@@ -9,7 +9,7 @@ from .forms import CustomUserCreationForm
    # return HttpResponse("Welcome to SpendWise!")
 
 def home(request):
-    return render(request, "tracker/home.html")  # Use a template for home instead of HttpResponse
+    return render(request, "tracker/index.html")  # Use a template for home instead of HttpResponse
 
 def register(request):
     if request.method == 'POST':
