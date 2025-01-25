@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}SpendWise{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'tracker/css/style.css' %}">
+</head>
+<body>
+    <nav class="main-nav">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'register' %}">Register</a>
+        <a href="{% url 'login' %}">Login</a>
+    </nav>
+
+    {% block content %}
+    <!-- Page-specific content will be inserted here -->
+    {% endblock %}
+
+    <footer class="main-footer">
+        <p>&copy; 2025 SpendWise. All rights reserved.</p>
+    </footer>
+</body>
+</html>

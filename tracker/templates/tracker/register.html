@@ -1,46 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <style>
-        
-        .message {
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid transparent;
-            border-radius: 4px;
-        }
-        .message.success {
-            color: #155724;
-            background-color: #d4edda;
-            border-color: #c3e6cb;
-        }
-        .message.error {
-            color: #721c24;
-            background-color: #f8d7da;
-            border-color: #f5c6cb;
-        }
-    </style>
-</head>
-<body>
-    <h2>Register</h2>
+{% extends "tracker/base.html" %}
 
-    <!-- Block to display messages -->
-    {% if messages %}
-    <ul>
-        {% for message in messages %}
-        <li class="message {{ message.tags }}">{{ message }}</li>
-        {% endfor %}
-    </ul>
-    {% endif %}
+{% block title %}Register - SpendWise{% endblock %}
 
-    <!-- Registration form -->
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Register</button>
-    </form>
-</body>
-</html>
+{% block content %}
+<h2>Register</h2>
+
+<!-- Block to display messages -->
+{% if messages %}
+<ul>
+    {% for message in messages %}
+    <li class="message {{ message.tags }}">{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+<!-- Registration form -->
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Register</button>
+</form>
+{% endblock %}

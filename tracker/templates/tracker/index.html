@@ -1,42 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    {% load static %}
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpendWise - Home</title>
-    <link rel="stylesheet" href="{% static 'tracker/css/style.css' %}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="main-nav flex">
-        <a class="logo" href="/">SpendWise</a>
-        <ul class="nav__list flex">
-            <li class="nav-item">
-                <a href="/" class="nav__link">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'about' %}">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="{% url 'register' %}" class="nav__link">Register</a>
-            </li>
-            <li class="nav-item">
-                <a href="{% url 'login' %}" class="nav__link">Login</a>
-            </li>
-        </ul>
-    </nav>
+{% extends "tracker/base.html" %}
 
-    <!-- Hero Section -->
-    <header class="hero" style="background-image: url('{% static 'tracker/images/Hero image - unsplash.jpg' %}');">
+{% block title %}Home - SpendWise{% endblock %}
+
+{% block content %}
+    <header class="hero" style="background-image: url('{% static 'tracker/static/tracker/images/Hero image - unsplash.jpg' %}');">
         <div class="hero-content">
             <h1>Welcome to SpendWise</h1>
             <p>Track your expenses, manage your budget, and achieve your financial goals with ease.</p>
-            <div class="button-group">
-                <a href="/login/" class="btn">Log In</a>
-                <a href="/register/" class="btn btn-outline">Sign Up</a>
-            </div>
         </div>
     </header>
 
@@ -63,12 +33,5 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 SpendWise. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
+    {% endblock %}
+    

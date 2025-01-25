@@ -24,9 +24,11 @@ nav a {
     color: white;
     margin: 0 10px;
     text-decoration: none;
+    transition: color 0.3s ease;  /* Smooth transition for hover effect */
 }
 
 nav a:hover {
+    color: #f0a500;
     text-decoration: underline;
 }
 
@@ -82,6 +84,7 @@ nav a:hover {
 .section {
     padding: 40px 20px;
     text-align: center;
+    margin-top: 20px; /* Consistent top margin for sections */
 }
 
 .section h2 {
@@ -99,12 +102,89 @@ nav a:hover {
     color: #fff;
     padding: 5rem;
     text-align: center;
-  }
-  
-  .content {
+}
+
+.content {
     padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.6;
-  }
-  
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.message.success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.message.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 40vh; /* Adjust the hero section height on smaller screens */
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    form {
+        width: 90%; /* Make form slightly smaller on mobile */
+    }
+}

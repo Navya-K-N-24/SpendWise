@@ -1,14 +1,23 @@
+{% extends "tracker/base.html" %}
+
+{% block title %}Login - SpendWise{% endblock %}
+
+{% block content %}
 <h2>Login</h2>
+
+<!-- Block to display messages -->
+{% if messages %}
+<ul>
+    {% for message in messages %}
+    <li class="message {{ message.tags }}">{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+<!-- Login form -->
 <form method="post">
     {% csrf_token %}
-    <label for="username">Username:</label>
-    <input type="text" name="username" id="username" required>
-    <br>
-    <label for="password">Password:</label>
-    <input type="password" name="password" id="password" required>
-    <br>
+    {{ form.as_p }}
     <button type="submit">Login</button>
 </form>
-{% if form.errors %}
-    <p style="color: red;">Invalid username or password.</p>
-{% endif %}
+{% endblock %}
