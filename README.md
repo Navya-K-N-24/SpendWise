@@ -12,7 +12,7 @@ SpendWise is a web-based expense tracker designed to help users manage their fin
     - [Link to User Stories in GitHub Projects](#link-to-User-Stories-in-GitHub-Projects)
     - [Wireframes](#wireframes)
 - [Design Rationale](#design-rationale)
-- [Reasoning For Any Final Changes](#Reasoning-for-any-final-changes)
+- [Reasoning For Any Final Changes](#reasoning-for-any-final-changes)
 - [Key Features](#key-features)
     - [User Registration and Login](#user-registration-and-login)
 - [Deployment](#deployment)
@@ -30,7 +30,6 @@ SpendWise is a web-based expense tracker designed to help users manage their fin
 - [Future Enhancements](#future-enhancements)
 - [Credits](#credits)
 
-
 <p align="right"><a href="#top">Back to top</a></p>
 <hr/>
 
@@ -42,26 +41,34 @@ SpendWise is a web-based expense tracker designed to help users manage their fin
 - **Wireframes**
 ![Homepage Wireframe across various devices](https://github.com/Navya-K-N-24/SpendWise/blob/fffc237c72fb0b3131fc0ec2bc60be79395bc355/Wireframe%20Homepage.png)
 - The wireframes were created using Balsamiq Wireframes to map out the structure of the site on mobile, tablet, and desktop views. This guided the development of the site and ensured that the interface suited users on various devices.
+
 <p align="right"><a href="#top">Back to top</a></p>
 <hr/>
+
 - **Design Rationale**
   - The layout is clean and minimalistic to make navigation intuitive for all users.
   - The color scheme ensures adequate contrast for readability, addressing accessibility guidelines (WCAG).
   - Typography choices prioritize readability across devices and assistive technologies.
+
 <p align="right"><a href="#top">Back to top</a></p>
 <hr/>
+
 - **Reasoning For Any Final Changes**
   - Changes were made to improve usability, such as adjusting button sizes for mobile devices and ensuring keyboard accessibility across all interactive elements.
+
 <p align="right"><a href="#top">Back to top</a></p>
 <hr/>
+
 ## Key Features
 - **Feature 1:** User Registration and Login 
   - Users can register with a secure password and log in to access their personalized dashboard.
   - **Inclusivity Notes:** 
     - The registration and login forms are designed to be accessible for keyboard navigation.
     - Field labels are clear and include descriptive error messages to assist users with visual impairments or cognitive challenges.
+
 <p align="right"><a href="#top">Back to top</a></p>
 <hr/>
+
 ## Deployment
 - **Platform** Heroku
 - **High-Level Deployment Steps** 
@@ -76,8 +83,10 @@ SpendWise is a web-based expense tracker designed to help users manage their fin
 - **Security Measures**
   - Environment variables were used to store sensitive data, such as the database URL.
   - DEBUG mode was disabled in production to prevent exposure of sensitive information.
+
 <p align="right"><a href="#top">Back to top</a></p>
 <hr/>
+
 ## AI Implementation and Orchestration
 
 ### Use Cases and Reflections:
@@ -114,14 +123,18 @@ SpendWise is a web-based expense tracker designed to help users manage their fin
     - Basic CRUD operations
   - Adjustments Made: 
     - Test cases were refined to handle edge cases, ensuring better coverage for accessibility.
+
 <p align="right"><a href="#top">Back to top</a></p>
 <hr/>
+
 ## Future Enhancements
 - Add features to track income and savings alongside expenses.
 - Introduce graphs and charts for better visualization of spending patterns.
 - Improve accessibility further by adding voice input support for transaction entries.
+
 <p align="right"><a href="#top">Back to top</a></p>
 <hr/>
+
 ## Credits
 - **Image Credits:**
 Expense Tracker <a href="https://unsplash.com/@jakubzerdzicki?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jakub Żerdzicki</a> on <a href="https://unsplash.com/photos/a-person-is-writing-on-a-piece-of-paper-ykgLX_CwtDw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
