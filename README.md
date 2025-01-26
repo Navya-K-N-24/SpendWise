@@ -146,9 +146,9 @@ SpendWise is a web-based expense tracker designed to help users manage their fin
 ## Credits
 - **Image Credits:**
   - **Expense Tracker README image**
-  - Photo by <a href="https://unsplash.com/@umbra_media?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Christopher Bill</a> on <a href="https://unsplash.com/photos/5-pieces-of-banknotes-on-yellow-and-white-textile-rrTRZdCu7No?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      Photo by <a href="https://unsplash.com/@umbra_media?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Christopher Bill</a> on <a href="https://unsplash.com/photos/5-pieces-of-banknotes-on-yellow-and-white-textile-rrTRZdCu7No?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   - **Hero image**
-  - Photo by <a href="https://unsplash.com/@mike_cho?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mike Cho</a> on <a href="https://unsplash.com/photos/a-tablet-computer-sitting-on-top-of-a-bed-next-to-a-cell-phone-zO8Crw8SoUM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      Photo by <a href="https://unsplash.com/@mike_cho?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mike Cho</a> on <a href="https://unsplash.com/photos/a-tablet-computer-sitting-on-top-of-a-bed-next-to-a-cell-phone-zO8Crw8SoUM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
 - **Wireframes:** 
     - Created using Balsamiq Wireframes
