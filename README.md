@@ -10,9 +10,9 @@ SpendWise is a web-based expense tracker designed to help users manage their fin
 ## Table of Contents
 - [User Experience Design Process](#user-experience-design-process)
     - [Link to User Stories in GitHub Projects](#link-to-User-Stories-in-GitHub-Projects)
-    - [Wireframes](wireframes)
-- [Design Rationale](design-rationale)
-- [Reasoning For Any Final Changes](Reasoning-for-any-final-changes)
+    - [Wireframes](#wireframes)
+- [Design Rationale](#design-rationale)
+- [Reasoning For Any Final Changes](#Reasoning-for-any-final-changes)
 - [Key Features](#key-features)
     - [User Registration and Login](#user-registration-and-login)
 - [Deployment](#deployment)
@@ -26,8 +26,8 @@ SpendWise is a web-based expense tracker designed to help users manage their fin
     - [Performance and UX Optimisation](#performance-and-ux-optimisation)
     - [Automated Unit Testing](#automated-unit-testing)
     - [Overall Impact](#overall-impact)
-- [Testing Summary](testing-summary)
-- [Future Enhancements](future-enhancements)
+- [Testing Summary](#testing-summary)
+- [Future Enhancements](#future-enhancements)
 - [Credits](#credits)
 
 
