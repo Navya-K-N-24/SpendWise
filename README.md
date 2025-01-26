@@ -4,25 +4,98 @@ Welcome to SpendWise, A tracking tool to your expenses!
 
 ![Expense Tracker Image](jakub-zerdzicki-ykgLX_CwtDw-unsplash.png)
 
-## Introduction
+## Overview
 SpendWise is a web-based expense tracker designed to help users manage their finances efficiently. The platform offers secure user registration and login, allowing users to add, view, edit, and delete transactions. With SpendWise, users can generate detailed reports to analyze their spending patterns and make informed financial decisions. The project is built using Django, and it incorporates responsive design, real-time notifications, and secure access control to enhance user experience and data security.
 
-## Agile
-Given the timeframe of this project I prioritised delivering a minimum viable product by the deadline, with ideas on what could be added if time allowed. This process was managed with a kanban board that assigned tasks with either must have or should have labels.
+## UX Design Process
 
-## Wireframes
-The wireframes for this project were created using Balsamiq Wireframes to map out the structure of the site on mobile, Tablet and desktop view. Doing so helped to guide the development of the site and how the quiz interface would best suit the user.
-![Homepage Wireframe across various devices](https://github.com/Navya-K-N-24/SpendWise/blob/fffc237c72fb0b3131fc0ec2bc60be79395bc355/Wireframe%20Homepage.png)
+- **Link to User Stories in GitHub Projects:**
+- [Add a link to the GitHub Projects kanban board.]https://github.com/users/Navya-K-N-24/projects/7
 
+- **Wireframes:**
+- ![Homepage Wireframe across various devices](https://github.com/Navya-K-N-24/SpendWise/blob/fffc237c72fb0b3131fc0ec2bc60be79395bc355/Wireframe%20Homepage.png)
+- The wireframes were created using Balsamiq Wireframes to map out the structure of the site on mobile, tablet, and desktop views. This guided the development of the site and ensured that the interface suited users on various devices.
 
+- **Design Rationale:**
+  - The layout is clean and minimalistic to make navigation intuitive for all users.
+  - The color scheme ensures adequate contrast for readability, addressing accessibility guidelines (WCAG).
+  - Typography choices prioritize readability across devices and assistive technologies.
 
+- **Reasoning For Any Final Changes:**
+  - Changes were made to improve usability, such as adjusting button sizes for mobile devices and ensuring keyboard accessibility across all interactive elements.
 
+## Key Features
+- **Feature 1:** User Registration and Login 
+  - Users can register with a secure password and log in to access their personalized dashboard.
+  - **Inclusivity Notes:** 
+    - The registration and login forms are designed to be accessible for keyboard navigation.
+    - Field labels are clear and include descriptive error messages to assist users with visual impairments or cognitive challenges.
 
+## Deployment
+- **Platform:** Heroku
+- **High-Level Deployment Steps:** 
+  1. Code was pushed to the GitHub repository linked with Heroku.
+  2. A Procfile was created to specify the WSGI server (gunicorn).
+  3. Environment variables for sensitive data, such as the database URL, were configured in Heroku.
 
+- **Verification and Validation:**
+  - The deployed application was tested to ensure it matched the local development version in functionality.
+  - Accessibility checks were performed using browser developer tools to verify keyboard navigation and color contrast compliance.
 
+- **Security Measures:**
+  - Environment variables were used to store sensitive data, such as the database URL.
+  - DEBUG mode was disabled in production to prevent exposure of sensitive information.
+
+## AI Implementation and Orchestration
+
+### Use Cases and Reflections:
+
+  - **Code Creation:** 
+    - Strategic use of AI accelerated prototyping and coding processes. 
+    - Examples: Prompts were used to generate alternative solutions for form validations.
+
+  - **Debugging:** 
+    - AI tools resolved syntax errors and optimized logic, making the codebase easier to maintain.
+  - **Performance and UX Optimization:** 
+    - Improvements included faster page load times and enhanced user experience through AI-recommended layout adjustments.
+  - **Automated Unit Testing:**
+    - Reflection: Adjustments were made to improve test coverage and ensure alignment with functionality. Prompts were used to generate inclusive test cases that considered edge cases for accessibility.
+
+- **Overall Impact:**
+  - AI tools streamlined repetitive tasks, enabling focus on high-level development.
+  - Efficiency gains included faster debugging, comprehensive testing, and improved code quality.
+  - Challenges included contextual adjustments to AI-generated outputs, which were resolved effectively, enhancing inclusivity.
+
+## Testing Summary
+- **Manual Testing:**
+  - **Devices and Browsers Tested:** 
+    - Mobile, tablet, and desktop devices using Chrome, Firefox, and Edge.
+  - **Features Tested:** 
+    - Registration and login functionality.
+    - Navigation and layout responsiveness.
+  - **Results:** 
+    - All features performed as expected.
+- **Automated Testing:**
+  - Tools Used: Django TestCase.
+  - Features Covered: 
+    - User authentication
+    - Basic CRUD operations
+  - Adjustments Made: 
+    - Test cases were refined to handle edge cases, ensuring better coverage for accessibility.
+
+## Future Enhancements
+- Add features to track income and savings alongside expenses.
+- Introduce graphs and charts for better visualization of spending patterns.
+- Improve accessibility further by adding voice input support for transaction entries.
 
 ## Credits
-Expense Tracker image by Photo by <a href="https://unsplash.com/@jakubzerdzicki?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jakub Żerdzicki</a> on <a href="https://unsplash.com/photos/a-person-is-writing-on-a-piece-of-paper-ykgLX_CwtDw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+- **Image Credits:**
+Expense Tracker <a href="https://unsplash.com/@jakubzerdzicki?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jakub Żerdzicki</a> on <a href="https://unsplash.com/photos/a-person-is-writing-on-a-piece-of-paper-ykgLX_CwtDw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
-Wireframes by Balsamiq Wireframes
+- **Wireframes:** 
+    - Created using Balsamiq Wireframes
+
+- **Images**
+    -Hero image - Photo by <a href="https://unsplash.com/@mike_cho?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mike Cho</a> on <a href="https://unsplash.com/photos/a-tablet-computer-sitting-on-top-of-a-bed-next-to-a-cell-phone-zO8Crw8SoUM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      
       
