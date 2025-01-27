@@ -64,11 +64,42 @@ SpendWise is a web-based expense tracker designed to help users manage their fin
 
 ## Key Features
 
+<p align="right"><a href="#top">Back to top</a></p>
+<hr/
+
 ### Feature 1: User Registration and Login 
-  - Users can register with a secure password and log in to access their personalized dashboard.
+  - Users can register by filling the required details and a secure password and log in to access their personalized dashboard.
   - **Inclusivity Notes:** 
     - The registration and login forms are designed to be accessible for keyboard navigation.
     - Field labels are clear and include descriptive error messages to assist users with visual impairments or cognitive challenges.
+
+<p align="right"><a href="#top">Back to top</a></p>
+<hr/>
+
+### Feature 2: Add Transaction
+ 
+  - Users can add transactions & track their expenses.
+
+  - **Inclusivity Notes:** 
+    - The user can access the "Add Transaction" form from the main interface.
+
+    - Enter Transaction Details.
+      - The user can input the transaction date.
+      - The user can input the amount spent.
+      - The user can choose a category (e.g., groceries, entertainment).
+      - The user can add a description or note about the transaction.
+    
+    - Validation
+      - The form ensures all required fields are filled before submission.
+      - The input is validated for the correct date format and numeric values for amount.
+
+    - Save Transaction
+      - After submitting the form, the transaction is saved to the database.
+      - A confirmation message is displayed upon successful submission.
+      - The newly added transaction is displayed in the transactions list.
+    
+    - Error Handling
+      - If the user provides invalid data, appropriate error messages are shown next to the relevant form fields.
 
 <p align="right"><a href="#top">Back to top</a></p>
 <hr/>
