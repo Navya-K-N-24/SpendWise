@@ -20,6 +20,7 @@ Live site: [https://spendwisenavya-47b3e163d0fa.herokuapp.com/](https://spendwis
     - [Add Transaction](#feature-2-add-transaction)
     - [Edit Transaction](#feature-3-edit-transaction)
     - [Delete Transaction](#feature-4-delete-transaction)
+    - [Role-Based Login and Registration](#feature-5-role-based-login-and-registration)
 - [Deployment](#deployment)
     - [Platform](#platform)
     - [High-Level Deployment Steps](#high-level-deployment-steps)
@@ -73,7 +74,7 @@ Live site: [https://spendwisenavya-47b3e163d0fa.herokuapp.com/](https://spendwis
 
   - Users can register by filling the required details and a secure password and log in to access their personalized dashboard.
 
-  - **Inclusivity Notes:** 
+  - **Implementation:** 
     - The registration and login forms are designed to be accessible for keyboard navigation.
     - Field labels are clear and include descriptive error messages to assist users with visual impairments or cognitive challenges.
 
@@ -84,7 +85,7 @@ Live site: [https://spendwisenavya-47b3e163d0fa.herokuapp.com/](https://spendwis
  
   - Users can add transactions & track their expenses.
 
-  - **Inclusivity Notes:** 
+  - **Implementation:** 
     - The user can access the "Add Transaction" form from the main interface.
 
     - Enter Transaction Details.
@@ -112,7 +113,7 @@ Live site: [https://spendwisenavya-47b3e163d0fa.herokuapp.com/](https://spendwis
  
   - Users can edit transactions & correct any mistakes.
 
-  - **Inclusivity Notes:** 
+  - **Implementation:** 
 
     - Navigate to Transactions:
       - Users can view the list of all transactions and identify the transaction they want to edit.
@@ -151,16 +152,13 @@ Live site: [https://spendwisenavya-47b3e163d0fa.herokuapp.com/](https://spendwis
     - 4. Save Changes: Click "Save" to update the transaction. A confirmation message will appear.
     - 5. Cancel Changes: If you decide not to edit the transaction, click "Cancel" to return to the transaction list without saving changes.
 
-**Screenshots:**
-(You can add any relevant screenshots showing the transaction list, edit form, and the updated transaction list after editing.)
-
 <p align="right"><a href="#top">Back to top</a></p>
 <hr/>
 
 ### Feature 4: Delete Transaction
  
   - Users can Delete transactions so can remove incorrect or unwanted entries.
-  - **Inclusivity Notes:** 
+  - **Implementation:** 
 
     - Navigate to Transactions:
       - User can access the list of transactions.
@@ -182,8 +180,27 @@ Live site: [https://spendwisenavya-47b3e163d0fa.herokuapp.com/](https://spendwis
       - User can cancel the deletion process.
       - No changes are made if deletion is canceled.
 
-**Screenshots:**
-(You can add any relevant screenshots showing the transaction list, edit form, and the updated transaction list after editing.)
+<p align="right"><a href="#top">Back to top</a></p>
+<hr/>
+
+### Feature 5: Role-Based Login and Registration
+ 
+  - Users can register and log in with role-based authentication, so can have different access levels (admin or user).
+
+  - **As an admin**, User is able to perform administrative tasks.
+
+  - **As a user**, User can add, edit, view, and delete transactions on dashboard.
+
+  - **Implementation:** 
+
+    - Created a custom user model (`CustomUser`) for role-based authentication, which includes two roles: **admin** and **user**.
+
+    - Implemented the ability to register, log in, and redirect users based on their roles.
+
+    - The login view checks the user's role and redirects accordingly (to the dashboard for a user and to an admin panel for an admin).
+
+    - The user dashboard displays all the transactions for the logged-in user, and transaction management functionalities (add, edit, delete) are restricted based on the user's 
+      role.
 
 <p align="right"><a href="#top">Back to top</a></p>
 <hr/>
