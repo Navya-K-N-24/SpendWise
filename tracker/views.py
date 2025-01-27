@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import CustomUserCreationForm
+from .forms import TransactionForm
+from .models import Transaction
 
 # Home page view
 def home(request):
@@ -21,3 +23,23 @@ def register(request):
     else:
         form = CustomUserCreationForm()
     return render(request, 'tracker/register.html', {'form': form})
+
+# Add Transaction view
+def add_transaction(request):
+    if request.method == 'POST':
+        form = TransactionForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Transaction added successfully!")
+            return redirect('transaction_list')  # Redirect to the transaction list page
+        else:
+            messages.error(request, "Please correct the errors below.")
+    else:
+        form = TransactionForm()
+
+    return render(request, 'tracker/add_transaction.html', {'form': form})
+
+# All Transaction view
+def transaction_list(request):
+    transactions = Transaction.objects.all()
+    return render(request, 'tracker/transaction_list.html', {'transactions': transactions})

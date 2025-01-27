@@ -115,7 +115,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # Redirect after login
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/add/' # Redirect to Add Transaction page after login
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
