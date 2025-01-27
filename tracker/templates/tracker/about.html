@@ -1,26 +1,36 @@
 {% extends "tracker/base.html" %}
+{% load static %}
 
-{% block title %}About - SpendWise{% endblock %}
+{% block title %}Home - SpendWise{% endblock %}
 
 {% block content %}
-    <header class="hero hero--about">
-      <h1>About SpendWise</h1>
-    </header>
 
-    <main class="content">
-      <section>
+<div class="hero" style="background-image: url('{% static 'tracker/images/Hero image - unsplash.jpg' %}');">
+    <div class="hero-content">
+        <h1>About SpendWise</h1>   
         <p>
           SpendWise is an intuitive expense tracker designed to help you manage
           your finances effortlessly. With features like transaction tracking,
           category breakdowns, and monthly summaries, SpendWise empowers you to
           make smarter financial decisions.
         </p>
-        <p>
-          Whether you're managing personal expenses or family budgets,
+        <br>
+        <p>SpendWise is a comprehensive expense tracker designed to help users efficiently manage their personal finances.
+          Our platform offers tools to monitor expenses, plan budgets, and achieve financial goals.
+        </p>
+        <br>
+        <p>Whether you're managing personal expenses or family budgets,
           SpendWise provides the tools you need to stay on top of your spending
           and achieve your financial goals.
         </p>
-      </section>
-    </main>
-
+        <br>
+        <p>Built with simplicity and security in mind, SpendWise aims to empower individuals to take control of their financial future.</p>
+    </div>
+</div>    
 {% endblock %}
+    
+
+ 
+
+
+

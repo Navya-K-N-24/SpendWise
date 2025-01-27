@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}SpendWise{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'tracker/css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="{% static 'tracker/css/style.css' %}">  
 </head>
-<body>
+<body style="background: url('{% static 'tracker/images/hero_image.jpg' %}') no-repeat center center/cover; background-size: cover; background-position: center center;">
     
     <!-- Navigation Bar -->
     <nav class="main-nav">
@@ -19,13 +20,11 @@
             <li class="nav-item"><a href="/login/" class="nav__link">Login</a></li>            
         </ul>        
     </nav>
-
-    <!-- Hero Section with Image -->
     
     <div class="main-content">
-    {% block content %}
-    <!-- Page-specific content will be inserted here -->
-    {% endblock %}
+        {% block content %}
+        <!-- Page-specific content will be inserted here -->
+         {% endblock %}
     </div>
 
     <!-- Footer Section -->
@@ -34,3 +33,6 @@
     </footer>
 </body>
 </html>
+
+
+
