@@ -68,6 +68,7 @@ def transaction_list(request):
 
 
 # Add Transaction view
+
 @login_required
 def add_transaction(request):
     if request.method == 'POST':
