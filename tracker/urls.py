@@ -9,4 +9,5 @@ urlpatterns = [
     path('login/', auth_views.LoginView.as_view(template_name='tracker/login.html'), name='login'),  # Login page
     path('add/', views.add_transaction, name='add_transaction'),
     path('transactions/', views.transaction_list, name='transaction_list'),
+    path('transactions/edit/<int:pk>/', views.edit_transaction, name='edit_transaction'),
 ]

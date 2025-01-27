@@ -130,8 +130,18 @@ nav a:hover {
     border-color: #f5c6cb;
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
 h2 {
-    color: #333;
+    color: #ffffff;
     font-size: 2rem;
     margin-bottom: 20px;
     text-align: center;
@@ -172,6 +182,23 @@ form input {
 form input:focus {
     border-color: #007bff;
     outline: none;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
 }
 
 /* Responsive Design */
