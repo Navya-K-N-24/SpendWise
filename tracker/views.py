@@ -57,3 +57,13 @@ def edit_transaction(request, pk):
         form = TransactionForm(instance=transaction)
 
     return render(request, 'tracker/edit_transaction.html', {'form': form, 'transaction': transaction})
+
+# Delete Transaction
+def delete_transaction(request, pk):
+    transaction = get_object_or_404(Transaction, pk=pk)
+    
+    if request.method == 'POST':  
+        transaction.delete()
+        return redirect('transaction_list')  
+    
+    return render(request, 'tracker/delete_transaction.html', {'transaction': transaction})
