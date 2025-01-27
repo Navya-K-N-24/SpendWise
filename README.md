@@ -14,7 +14,9 @@ SpendWise is a web-based expense tracker designed to help users manage their fin
     - [Design Rationale](#design-rationale)
     - [Reasoning For Any Final Changes](#reasoning-for-any-final-changes)
 - [Key Features](#key-features)
-    - [User Registration and Login](#user-registration-and-login)
+    - [User Registration and Login](#feature-1-user-registration-and-login)
+    - [Add Transaction](#feature-2-add-transaction)
+    - [Edit Transaction](#feature-3-edit-transaction)
 - [Deployment](#deployment)
     - [Platform](#platform)
     - [High-Level Deployment Steps](#high-level-deployment-steps)
@@ -64,11 +66,10 @@ SpendWise is a web-based expense tracker designed to help users manage their fin
 
 ## Key Features
 
-<p align="right"><a href="#top">Back to top</a></p>
-<hr/
-
 ### Feature 1: User Registration and Login 
+
   - Users can register by filling the required details and a secure password and log in to access their personalized dashboard.
+
   - **Inclusivity Notes:** 
     - The registration and login forms are designed to be accessible for keyboard navigation.
     - Field labels are clear and include descriptive error messages to assist users with visual impairments or cognitive challenges.
@@ -100,6 +101,55 @@ SpendWise is a web-based expense tracker designed to help users manage their fin
     
     - Error Handling
       - If the user provides invalid data, appropriate error messages are shown next to the relevant form fields.
+
+<p align="right"><a href="#top">Back to top</a></p>
+<hr/>
+
+### Feature 3: Edit Transaction
+ 
+  - Users can edit transactions & correct any mistakes.
+
+  - **Inclusivity Notes:** 
+
+    - Navigate to Transactions:
+      - Users can view the list of all transactions and identify the transaction they want to edit.
+
+    - Initiate Edit:
+      - Users can select a transaction from the list and click on the "Edit" button to modify its details.
+    
+    - Edit Form:
+      - The edit form is pre-populated with the current details of the selected transaction.
+      - Users can edit the following details:
+        - Transaction Date
+        - Amount Spent
+        - Category
+        - Description
+
+    - Validation:
+      - The form ensures that all required fields are filled out.
+      - Input data is validated, ensuring proper formats (e.g., date format, numeric values for amounts).
+
+    - Save Changes:
+      - Users can save their changes to the transaction by submitting the form.
+      - After saving, a confirmation message is displayed to inform the user that the changes have been successfully saved.
+      - The transaction list is updated to reflect the modified details.
+
+    - Cancel Changes:
+      - Users can cancel editing without saving changes. In this case, the transaction details remain unchanged.
+
+    - Error Handling:
+      - Error messages are displayed next to the relevant form fields if any validation issues occur (e.g., missing required fields or incorrect data formats).
+
+  **Steps to Edit a Transaction:**
+
+    - 1. View the Transaction List: Access the list of transactions from the homepage.
+    - 2. Select the Transaction: Click on the "Edit" button next to the transaction you want to edit.
+    - 3. Edit the Form: Modify the details of the transaction in the provided form fields.
+    - 4. Save Changes: Click "Save" to update the transaction. A confirmation message will appear.
+    - 5. Cancel Changes: If you decide not to edit the transaction, click "Cancel" to return to the transaction list without saving changes.
+
+**Screenshots:**
+(You can add any relevant screenshots showing the transaction list, edit form, and the updated transaction list after editing.)
 
 <p align="right"><a href="#top">Back to top</a></p>
 <hr/>
