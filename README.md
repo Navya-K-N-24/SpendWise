@@ -199,7 +199,7 @@ Live site: [https://spendwisenavya-47b3e163d0fa.herokuapp.com/](https://spendwis
 
     - The login view checks the user's role and redirects accordingly (to the dashboard for a user and to an admin panel for an admin).
 
-    - The user dashboard displays all the transactions for the logged-in user, and transaction management functionalities (add, edit, delete) are restricted based on the user's 
+    - The user dashboard displays all the transactions for the logged-in user with management functionalities (add, edit, delete) for the user to perform.
       role.
 
 <p align="right"><a href="#top">Back to top</a></p>
@@ -207,18 +207,95 @@ Live site: [https://spendwisenavya-47b3e163d0fa.herokuapp.com/](https://spendwis
 
 ## Deployment
 ### Platform: Heroku
+The web app is hosted on Heroku using Eco Dynos, and is deployed via the designated Github repository.
+
+A request is made via the CI Database Maker, which generates a PostgreSQL database hosted on AWS, with the database credentials sent to the email address provided in the request.
+
 ### High-Level Deployment Steps 
-  1. Code was pushed to the GitHub repository linked with Heroku.
-  2. A Procfile was created to specify the WSGI server (gunicorn).
-  3. Environment variables for sensitive data, such as the database URL, were configured in Heroku.
+
+The [Code Institute Template](https://github.com/Code-Institute-Org/ci-full-template) was used to create the GitHub repository, so that the website could be developed in the correct setup of Gitpod IDE.
+
+The GitHub Copilot extension was also installed in my local client version of MS VS Code, which was also connected with the same GitHub repository and linked to Gitpod via SSH. This allows for AI pair programming in the initial stages of development to create certain sections faster.
+
+The deployment process is as follows:
+1. Login to your GitHub profile and go to [Code Institute Template](https://github.com/Code-Institute-Org/ci-full-template). **Use this template** and **Create a new repository**.
+2. Open the Code Institute Gitpod IDE workspace. Open Gitpod workspace. Create the MVP.
+3. Login to Heroku and create a new app using a unique name and select the correct region. Add Config Vars in Settings.
+4. Install web server gunicorn and freeze requirements.
+5. Create a new Procfile in the root directory and specify the running of the web app with process type as gunicorn in the Procfile.
+6. Environment variables for sensitive data, such as the database URL, were configured in Heroku.
+7. Add deployed apps to ALLOWED_HOSTS in settings.py, and set Debug = False. Add, commit and push to the Github repo.
+8. In Heroku, go to Deploy tab, search for the correct Github repo and under manual deploy click **Deploy Branch**.
+9. **View app** to verify that it is been deployed correctly. This deployed site can now be validated and tested e.g. in Chrome Dev Tools.
+10. In the app's Resources tab, check that Eco Dynos are used and remove any unnecessary Add-ons.
+11. Subsequent changes to the code will need to be pushed to the Github repo and manually deployed on Heroku.
 
 ### Verification and Validation
   - The deployed application was tested to ensure it matched the local development version in functionality.
-  - Accessibility checks were performed using browser developer tools to verify keyboard navigation and color contrast compliance.
+  - Accessibility checks were performed using browser developer tools for color contrast compliance.
 
 ### Security Measures
   - Environment variables were used to store sensitive data, such as the database URL.
   - DEBUG mode was disabled in production to prevent exposure of sensitive information.
+
+Validation of HTML/CSS, Lighthouse Audits, Bugs
+#### HTML Validation
+Add details of HTML validation:
+<details>
+  <summary>HTML validation screenshots:</summary>
+  <b>Add screenshots</b>
+</details>
+
+#### CSS Validation
+Add details of CSS validation:
+<details>
+  <summary>CSS validation screenshots:</summary>
+  <b>Add screenshots</b>
+</details>
+
+### JSHint Linter
+
+- Used [JS Hint](https://jshint.com/)) to test Javascript for ES version 6 and got no warnings. Results are included below:<br>
+script.js
+<details>
+  <summary>messages.js:</summary>
+    
+  ![JSHint_messages](https://github.com/user-attachments/assets/6a318515-e340-4d42-826a-3e5d3d26fd0a)
+
+</details>
+
+<details>
+<summary>thumbnail-image.js:</summary>
+    
+  ![JSHint_thumbnail-image](https://github.com/user-attachments/assets/ed7bfe5a-3bec-468e-be28-fb19057eb863)
+</details>
+
+#### Python Linter
+- Used [Code Institute Python Linter](https://pep8ci.herokuapp.com/) to check all Python code I have written meets the PEP8 standard and got no warnings. Results from linting one of the files (test_models.py) has been included below:<br>
+
+<details>
+  <summary>test_models.py:</summary>
+    
+  ![python_linter_example_test-models](https://github.com/user-attachments/assets/47a4c704-a8a4-4d10-8983-3498ca15d851)
+
+</details>
+
+
+#### Lighthouse Audit
+Chrome Dev Tools Lighthouse was used to audit the site for response time and accessibility. Testing was done during MVP development after deploying v1 Homepage with only the cards of published scrapbooks, allowing more time for bug fixes.<br>
+
+Colour constrast issues:
+* Colour contrast issues in navbar as mentioned above in [Colour Scheme](#colour-scheme) [resolved]
+* Colour constrast issues in card text and subtitle [resolved]
+* Cloudinary not using https [resolved]
+
+Screenshots of Lighthouse Audit on the Homepage after fixes:
+
+Mobile:
+![image](https://github.com/)
+
+Desktop:
+![image](https://github.com/)
 
 <p align="right"><a href="#top">Back to top</a></p>
 <hr/>
@@ -247,6 +324,33 @@ Live site: [https://spendwisenavya-47b3e163d0fa.herokuapp.com/](https://spendwis
 <hr/>
 
 ## Testing Summary
+
+### Automated Testing
+  - Tools Used: [Mention any testing frameworks or tools, e.g., Django TestCase.]
+
+  - **Features Tested:** 
+    - **Unit Tests**
+      - Unit tests have been implemented for the following key features:
+        - User Registration: Tests the registration functionality, ensuring that users can register with valid data and are redirected correctly.
+        - User Login: Tests the login functionality, ensuring that users can log in successfully with valid credentials.
+        - Transaction CRUD Operations: Tests the creation, updating, and deletion of transactions. Ensures that the CRUD operations work as expected, and data is properly saved 
+          and modified in the database.
+
+      - **Integration Tests**
+        - Integration tests have been written to ensure end-to-end functionality, covering:
+          - The interaction between different components (e.g., creating a transaction after a successful login).
+          - Ensuring that the user flow works from registration to login to CRUD operations for transactions.
+
+  - **Running Tests**
+    - To run the tests for the application, use the following command:
+    - python3 manage.py test tracker
+
+  - **Testing Coverage**
+    - **User Registration & Login:** Ensures that users can successfully register and log in with valid credentials.
+    - **Transaction Operations:** Verifies that users can create, update, and delete transactions correctly.
+
+  - **Results:** [Summarise testing results, e.g., "All critical features worked as expected, including accessibility checks."]
+
 ### Manual Testing:
   - **Devices and Browsers Tested:** 
     - Mobile, tablet, and desktop devices using Chrome, Firefox, and Edge.
@@ -256,21 +360,12 @@ Live site: [https://spendwisenavya-47b3e163d0fa.herokuapp.com/](https://spendwis
   - **Results:** 
     - All features performed as expected.
 
-### Automated Testing:
-  - Tools Used: Django TestCase.
-  - Features Covered: 
-    - User authentication
-    - Basic CRUD operations
-  - Adjustments Made: 
-    - Test cases were refined to handle edge cases, ensuring better coverage for accessibility.
-
 <p align="right"><a href="#top">Back to top</a></p>
 <hr/>
 
 ## Future Enhancements
-- Add features to track income and savings alongside expenses.
-- Introduce graphs and charts for better visualization of spending patterns.
-- Improve accessibility further by adding voice input support for transaction entries.
+- Add Data Visualization to view a visual representation of expenses so the User can better understand the spending habits by Graphs or charts showing spending by category, date, or other criteria.
+- Add Reports Generation to generate expense reports so that User can analyze their spending over a specific period
 
 <p align="right"><a href="#top">Back to top</a></p>
 <hr/>
