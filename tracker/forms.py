@@ -1,21 +1,26 @@
 from django import forms
-from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
-from .models import Transaction
+from .models import CustomUser, Transaction
 
+# Custom User Creation Form
 class CustomUserCreationForm(UserCreationForm):
     email = forms.EmailField(required=True)
 
     class Meta:
-        model = User
-        fields = ['username', 'email', 'password1', 'password2']
+        model = CustomUser  # Updated to use CustomUser instead of User
+        fields = ['username', 'email', 'password1', 'password2', 'role']
 
+# Custom Login Form
+class CustomUserLoginForm(forms.Form):
+    username = forms.CharField(max_length=150)
+    password = forms.CharField(widget=forms.PasswordInput)
+
+# Transaction Form
 class TransactionForm(forms.ModelForm):
     class Meta:
         model = Transaction
         fields = ['date', 'amount', 'category', 'description']
-    
-    widgets = {
+        widgets = {
             'date': forms.DateInput(attrs={'type': 'date'}),
         }
 

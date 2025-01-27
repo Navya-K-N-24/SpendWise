@@ -7,6 +7,8 @@ Welcome to SpendWise, A tracking tool to your expenses!
 ## Overview
 SpendWise is a web-based expense tracker designed to help users manage their finances efficiently. The platform offers secure user registration and login, allowing users to add, view, edit, and delete transactions. With SpendWise, users can generate detailed reports to analyze their spending patterns and make informed financial decisions. The project is built using Django, and it incorporates responsive design, real-time notifications, and secure access control to enhance user experience and data security.
 
+Live site: [https://spendwisenavya-47b3e163d0fa.herokuapp.com/](https://spendwisenavya-47b3e163d0fa.herokuapp.com/)
+
 ## Table of Contents
 - [User Experience Design Process](#user-experience-design-process)
     - [Link to User Stories in GitHub Projects](#link-to-user-stories-in-github-projects)
@@ -266,6 +268,11 @@ SpendWise is a web-based expense tracker designed to help users manage their fin
 - **Wireframes:** 
     - Created using Balsamiq Wireframes
 
+#### Acknowledgements
+
+Many thanks to:
+* Code Institute team (Fecilatator - Dillon,SME Coach - Mark and Coading Coachs - Roo & John) for your patience in making me understand the concept and techniques while answering all my questions,
+* Everyone from WECA group for being kind, supportive & helpful leading throughout learning of building this project,
 
 <p align="right"><a href="#top">Back to top</a></p>
 <hr/>

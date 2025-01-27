@@ -39,6 +39,8 @@ CSRF_TRUSTED_ORIGINS = [
     'https://spendwisenavya-47b3e163d0fa.herokuapp.com',
 ]
 
+AUTH_USER_MODEL = 'tracker.CustomUser'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -115,7 +117,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # Redirect after login
-LOGIN_REDIRECT_URL = '/add/' # Redirect to Add Transaction page after login
+LOGIN_REDIRECT_URL = '/transactions/add/' # Redirect to Add Transaction page after login
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
