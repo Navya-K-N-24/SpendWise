@@ -1,19 +1,12 @@
+{% extends "tracker/base.html" %}
+{% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transaction List</title>
-</head>
-<body>
+{% block title %}Transaction List{% endblock %}
+
+{% block content %}
     <h1>All Transactions</h1>
-    <ul>
-        {% for transaction in transactions %}
-            <li>{{ transaction.date }} - {{ transaction.amount }} - {{ transaction.category }} - {{ transaction.description }}</li>
-        {% endfor %}
-    </ul>
-    <table>
+    
+    <table class="table">
         <thead>
             <tr>
                 <th>Date</th>
@@ -37,9 +30,12 @@
                     <a href="{% url 'delete_transaction' transaction.pk %}" class="btn btn-danger">Delete</a>
                 </td>
             </tr>
+            {% empty %}
+                <tr>
+                        <td colspan="6">No transactions found.</td>
+                </tr>
             {% endfor %}
-        </tbody>
+         </tbody>
     </table>
-    
-</body>
-</html>
+
+{% endblock %}

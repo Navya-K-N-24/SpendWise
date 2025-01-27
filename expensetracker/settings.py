@@ -117,7 +117,10 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # Redirect after login
-LOGIN_REDIRECT_URL = '/transactions/add/' # Redirect to Add Transaction page after login
+LOGIN_REDIRECT_URL = '/dashboard/'  # Redirect to the Dashboard page after login
+
+# Redirect to home page after logout
+LOGOUT_REDIRECT_URL = '/'
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
@@ -139,7 +142,6 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_DIRS = [
     BASE_DIR / 'tracker/static',
 ]
-
 
 
 # Add whitenoise middleware

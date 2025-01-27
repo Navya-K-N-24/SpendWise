@@ -271,7 +271,7 @@ Live site: [https://spendwisenavya-47b3e163d0fa.herokuapp.com/](https://spendwis
 #### Acknowledgements
 
 Many thanks to:
-* Code Institute team (Fecilatator - Dillon,SME Coach - Mark and Coading Coachs - Roo & John) for your patience in making me understand the concept and techniques while answering all my questions,
+* Code Institute team (Fecilitator - Dillon,SME Coach - Mark, Coading Coach team - Roo & John, Slack channel members) for your patience in making me understand the concept and techniques while answering all my questions,
 * Everyone from WECA group for being kind, supportive & helpful leading throughout learning of building this project,
 
 <p align="right"><a href="#top">Back to top</a></p>

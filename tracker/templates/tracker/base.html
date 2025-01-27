@@ -1,4 +1,4 @@
-{% load static %}
+{% load static %} 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,22 +9,34 @@
     <link rel="stylesheet" href="{% static 'tracker/css/style.css' %}">  
 </head>
 <body style="background: url('{% static 'tracker/images/hero_image.jpg' %}') no-repeat center center/cover; background-size: cover; background-position: center center;">
+
+    <!-- Authentication Status Debugging -->
+    {% if user.is_authenticated %}
+        <p>User is authenticated.</p>
+    {% else %}
+        <p>User is not authenticated.</p>
+    {% endif %}
     
     <!-- Navigation Bar -->
     <nav class="main-nav">
         <div class="logo">SpendWise</div>
         <ul class="nav__list">
             <li class="nav-item"><a href="/" class="nav__link">Home</a></li>
-            <li class="nav-item"><a href="/about/" class="nav__link">About</a></li>
-            <li class="nav-item"><a href="/register/" class="nav__link">Register</a></li>
-            <li class="nav-item"><a href="/login/" class="nav__link">Login</a></li>            
+            <li class="nav-item"><a href="/about/" class="nav__link">About</a></li>  <!-- Re-added About link -->
+            {% if user.is_authenticated %}
+                <li class="nav-item"><a href="{% url 'dashboard' %}" class="nav__link">Dashboard</a></li>
+                <li class="nav-item"><a href="{% url 'logout' %}" class="nav__link">Logout</a></li>
+            {% else %}
+                <li class="nav-item"><a href="{% url 'register' %}" class="nav__link">Register</a></li>
+                <li class="nav-item"><a href="{% url 'login' %}" class="nav__link">Login</a></li>
+            {% endif %}
         </ul>        
     </nav>
     
     <div class="main-content">
         {% block content %}
         <!-- Page-specific content will be inserted here -->
-         {% endblock %}
+        {% endblock %}
     </div>
 
     <!-- Footer Section -->
@@ -33,6 +45,3 @@
     </footer>
 </body>
 </html>
-
-
-
