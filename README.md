@@ -17,6 +17,7 @@ SpendWise is a web-based expense tracker designed to help users manage their fin
     - [User Registration and Login](#feature-1-user-registration-and-login)
     - [Add Transaction](#feature-2-add-transaction)
     - [Edit Transaction](#feature-3-edit-transaction)
+    - [Delete Transaction](#feature-4-delete-transaction)
 - [Deployment](#deployment)
     - [Platform](#platform)
     - [High-Level Deployment Steps](#high-level-deployment-steps)
@@ -147,6 +148,37 @@ SpendWise is a web-based expense tracker designed to help users manage their fin
     - 3. Edit the Form: Modify the details of the transaction in the provided form fields.
     - 4. Save Changes: Click "Save" to update the transaction. A confirmation message will appear.
     - 5. Cancel Changes: If you decide not to edit the transaction, click "Cancel" to return to the transaction list without saving changes.
+
+**Screenshots:**
+(You can add any relevant screenshots showing the transaction list, edit form, and the updated transaction list after editing.)
+
+<p align="right"><a href="#top">Back to top</a></p>
+<hr/>
+
+### Feature 4: Delete Transaction
+ 
+  - Users can Delete transactions so can remove incorrect or unwanted entries.
+  - **Inclusivity Notes:** 
+
+    - Navigate to Transactions:
+      - User can access the list of transactions.
+      - User can identify the transaction to be deleted.
+
+    - Initiate Delete:
+      - User can select the transaction they want to delete.
+      - User clicks on the "Delete" button for the selected transaction.
+    
+    - Confirmation:
+      - User is prompted to confirm the deletion.
+      - User can confirm or cancel the deletion.
+
+    - Successful Deletion:
+      - Transaction is removed from the list upon confirmation.
+      - User receives a confirmation message after successful deletion.
+
+    - Cancel Deletion:
+      - User can cancel the deletion process.
+      - No changes are made if deletion is canceled.
 
 **Screenshots:**
 (You can add any relevant screenshots showing the transaction list, edit form, and the updated transaction list after editing.)
