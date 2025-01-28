@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "your-default-secret-key")
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = os.environ.get("DEBUG", "False") == "True"
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-navyakn24-spendwise-pppu5m4dt6l.ws.codeinstitute-ide.net', 'spendwisenavya-47b3e163d0fa.herokuapp.com']
 
