@@ -242,33 +242,20 @@ Validation of HTML/CSS, Lighthouse Audits, Bugs
 #### HTML Validation
 Add details of HTML validation:
 <details>
-  <summary>HTML validation screenshots:</summary>
-  <b>Add screenshots</b>
-</details>
-
-#### CSS Validation
-Add details of CSS validation:
-<details>
-  <summary>CSS validation screenshots:</summary>
-  <b>Add screenshots</b>
-</details>
-
-### JSHint Linter
-
-- Used [JS Hint](https://jshint.com/)) to test Javascript for ES version 6 and got no warnings. Results are included below:<br>
-script.js
-<details>
-  <summary>messages.js:</summary>
-    
-  ![JSHint_messages](https://github.com/user-attachments/assets/6a318515-e340-4d42-826a-3e5d3d26fd0a)
-
+  <summary>HTML Home page validation screenshots:</summary>
+  <b>[Add screenshots](https://github.com/Navya-K-N-24/SpendWise/blob/c8f2490bb7646b83a8182a284f696a887a66daab/home_page_validation.PNG)</b>
 </details>
 
 <details>
-<summary>thumbnail-image.js:</summary>
-    
-  ![JSHint_thumbnail-image](https://github.com/user-attachments/assets/ed7bfe5a-3bec-468e-be28-fb19057eb863)
+  <summary>HTML About page validation screenshots:</summary>
+  <b>[Add screenshots]([https://github.com/Navya-K-N-24/SpendWise/blob/c8f2490bb7646b83a8182a284f696a887a66daab/home_page_validation.PNG](https://github.com/Navya-K-N-24/SpendWise/blob/c8f2490bb7646b83a8182a284f696a887a66daab/about_page_validation.PNG))</b>
 </details>
+
+<details>
+  <summary>HTML Login page validation screenshots:</summary>
+  <b>[Add screenshots]([[https://github.com/Navya-K-N-24/SpendWise/blob/c8f2490bb7646b83a8182a284f696a887a66daab/home_page_validation.PNG](https://github.com/Navya-K-N-24/SpendWise/blob/c8f2490bb7646b83a8182a284f696a887a66daab/about_page_validation.PNG](https://github.com/Navya-K-N-24/SpendWise/blob/c8f2490bb7646b83a8182a284f696a887a66daab/login_page_validation.PNG)))</b>
+</details>
+
 
 #### Python Linter
 - Used [Code Institute Python Linter](https://pep8ci.herokuapp.com/) to check all Python code I have written meets the PEP8 standard and got no warnings. Results from linting one of the files (test_models.py) has been included below:<br>
@@ -280,6 +267,12 @@ script.js
 
 </details>
 
+#### Device Responsivness across Devices
+SpendWise is designed to be fully responsive across all device sizes, ensuring an optimal user experience whether accessed on mobile, tablet, or desktop. The design follows a mobile-first approach, based on the hypothesis that the majority of users maange expenses on their smartphones.
+
+To achieve this, the layout adapts seamlessly to different screen sizes using a combination of Bootstrap's grid system and Flexbox, applied strategically to maintain consistency and usability across devices.
+![Responsivness across all devices](https://github.com/Navya-K-N-24/SpendWise/blob/c8f2490bb7646b83a8182a284f696a887a66daab/device_responsivness1.PNG)
+![responsivness of all pages](https://github.com/Navya-K-N-24/SpendWise/blob/c8f2490bb7646b83a8182a284f696a887a66daab/device_responsivness2.PNG)
 
 #### Lighthouse Audit
 Chrome Dev Tools Lighthouse was used to audit the site for response time and accessibility. Testing was done during MVP development after deploying v1 Homepage with only the cards of published scrapbooks, allowing more time for bug fixes.<br>
@@ -287,10 +280,10 @@ Chrome Dev Tools Lighthouse was used to audit the site for response time and acc
 Screenshots of Lighthouse Audit on the Homepage 
 
 Mobile:
-![image](https://github.com/)
+![image]([https://github.com/](https://github.com/Navya-K-N-24/SpendWise/blob/c8f2490bb7646b83a8182a284f696a887a66daab/lighthouse_testing_mobile.PNG))
 
-Desktop:
-![image](https://github.com/)
+Tablet:
+![image]([https://github.com/](https://github.com/Navya-K-N-24/SpendWise/blob/c8f2490bb7646b83a8182a284f696a887a66daab/lighthouse_testing_tablet.PNG))
 
 <p align="right"><a href="#top">Back to top</a></p>
 <hr/>
