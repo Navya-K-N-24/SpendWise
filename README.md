@@ -284,12 +284,7 @@ script.js
 #### Lighthouse Audit
 Chrome Dev Tools Lighthouse was used to audit the site for response time and accessibility. Testing was done during MVP development after deploying v1 Homepage with only the cards of published scrapbooks, allowing more time for bug fixes.<br>
 
-Colour constrast issues:
-* Colour contrast issues in navbar as mentioned above in [Colour Scheme](#colour-scheme) [resolved]
-* Colour constrast issues in card text and subtitle [resolved]
-* Cloudinary not using https [resolved]
-
-Screenshots of Lighthouse Audit on the Homepage after fixes:
+Screenshots of Lighthouse Audit on the Homepage 
 
 Mobile:
 ![image](https://github.com/)
@@ -302,18 +297,20 @@ Desktop:
 
 ## AI Implementation and Orchestration
 
-### Code Generation
-  - Strategic use of AI accelerated prototyping and coding processes. 
-  - Examples: Prompts were used to generate alternative solutions for form validations.
+Throughout this project, I relied on GitHub Copilot to streamline development and testing. This was my first time using AI tools so extensively, and it became an invaluable collaborator during the process.
 
-### Debugging
-  - AI tools resolved syntax errors and optimized logic, making the codebase easier to maintain.
+- **Code Creation:** 
+  - Reflection: Initially, I was hesitant about how much I could rely on Copilot, but I quickly saw its value in generating boilerplate code, like Django models and CRUD views. Using reverse and multi-step prompts gave me the confidence to explore alternative approaches, and it even taught me new techniques I hadn’t considered before. For instance, it suggested cleaner, more Pythonic ways to handle database queries that saved me time and effort.
+  - Highlight: The iterative back-and-forth with Copilot felt like having a knowledgeable pair programmer by my side. This collaboration made me more thoughtful about how I structured my prompts, as clearer questions led to better answers.
 
-### Performance and UX Optimization
-  - Improvements included faster page load times and enhanced user experience through AI-recommended layout adjustments.
+- **Debugging:** 
+  - Reflection: Debugging with Copilot was a learning experience in itself. It didn’t just find errors; it often suggested solutions that highlighted gaps in my understanding. I appreciated how it encouraged me to simplify complex logic, making the code easier to maintain and more accessible to anyone who might work on it in the future.
 
-### Automated Unit Testing
-  - Reflection: Adjustments were made to improve test coverage and ensure alignment with functionality. Prompts were used to generate inclusive test cases that considered edge cases for accessibility.
+- **Performance and UX Optimization:** 
+  - Reflection: One of my proudest moments came when I used Copilot to refine the Bootstrap styling. I wasn’t very confident in front-end design, but the AI helped bridge that gap. It suggested small, impactful changes, like improving button alignment and tweaking breakpoints, that made the application feel polished and professional. These adjustments also ensured that the app was truly responsive, which was a priority for me.
+
+- **Automated Unit Testing:**
+  - Reflection: Writing unit tests has always been a challenging aspect of development for me, but Copilot turned it into a manageable task. I used question-and-answer and multi-step prompts to generate a solid starting point for my test cases, which I could then refine to align with the project’s requirements. Seeing it anticipate edge cases—like invalid user input—made me more aware of the importance of writing comprehensive tests. This process deepened my understanding of Django’s testing framework and made me more confident in my ability to create robust applications.
 
 ### Overall Impact
   - AI tools streamlined repetitive tasks, enabling focus on high-level development.
@@ -377,9 +374,9 @@ Desktop:
   - **Hero image**
       Photo by <a href="https://unsplash.com/@mike_cho?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mike Cho</a> on <a href="https://unsplash.com/photos/a-tablet-computer-sitting-on-top-of-a-bed-next-to-a-cell-phone-zO8Crw8SoUM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   - **About page images**
-      Photo by <a href="https://unsplash.com/@isaacmsmith?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Isaac Smith</a> on <a href="https://unsplash.com/photos/pen-om-paper-AT77Q0Njnt0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-      Photo by <a href="https://unsplash.com/@jakubzerdzicki?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jakub Żerdzicki</a> on <a href="https://unsplash.com/photos/a-person-is-writing-on-a-piece-of-paper-ykgLX_CwtDw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-      Photo by <a href="https://unsplash.com/@jakubzerdzicki?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Kenny Eliason</a> on <a href="https://unsplash.com/photos/a-person-is-writing-on-a-piece-of-paper-ykgLX_CwtDw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      - Photo by <a href="https://unsplash.com/@isaacmsmith?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Isaac Smith</a> on <a href="https://unsplash.com/photos/pen-om-paper-AT77Q0Njnt0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      - Photo by <a href="https://unsplash.com/@jakubzerdzicki?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jakub Żerdzicki</a> on <a href="https://unsplash.com/photos/a-person-is-writing-on-a-piece-of-paper-ykgLX_CwtDw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      - Photo by <a href="https://unsplash.com/@jakubzerdzicki?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Kenny Eliason</a> on <a href="https://unsplash.com/photos/a-person-is-writing-on-a-piece-of-paper-ykgLX_CwtDw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
         
 - **Wireframes:** 
     - Created using Balsamiq Wireframes
@@ -387,7 +384,7 @@ Desktop:
 #### Acknowledgements
 
 Many thanks to:
-* Code Institute team (Fecilitator - Dillon,SME Coach - Mark, Coading Coach team - Roo & John, Slack channel members) for your patience in making me understand the concept and techniques while answering all my questions,
+* Code Institute team (Learning Facilitator - Dillon Mc Caffrey, SME Coach - Mark Briscoe, Coading Coach team - Ruairidh MacArthur & John Rearden, Slack channel members) for your patience in making me understand the concept and techniques while answering all my questions,
 * Everyone from WECA group for being kind, supportive & helpful leading throughout learning of building this project,
 
 <p align="right"><a href="#top">Back to top</a></p>

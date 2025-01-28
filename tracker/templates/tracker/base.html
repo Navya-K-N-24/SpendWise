@@ -47,17 +47,15 @@
         <p>&copy; 2025 SpendWise. All rights reserved.</p>
     </footer>
 
-    <!-- Move the script here, at the bottom of the body -->
     <script>
         document.querySelector('.nav__toggle').addEventListener('click', toggleMenu);
         function toggleMenu() {
             console.log('Toggle menu clicked');
             
-            // Find the nav list
             const navList = document.querySelector('.nav__list');
             
             if (navList) {
-                navList.classList.toggle('show'); // Toggle the visibility of the menu
+                navList.classList.toggle('show'); 
             } else {
                 console.error('Nav list not found!');
             }

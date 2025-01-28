@@ -1,11 +1,10 @@
-/* Reset some default margin and padding for all elements */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Apply full height to body and html */
 html, body {
     height: 100%;
     margin: 0;
@@ -14,7 +13,6 @@ html, body {
     flex-direction: column;
 }
 
-/* Base styles for the body and general font */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -22,7 +20,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Navigation Styles */
 nav.main-nav {
     background-color: #333;
     padding: 10px 20px;
@@ -30,10 +27,10 @@ nav.main-nav {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: 0; /* Position it at the top */
-    left: 0; /* Align it to the left */
-    width: 100%; /* Make it span the full width */
-    z-index: 1000; /* Ensure it stays on top of other elements */
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
     margin-bottom: 20px;
 }
 
@@ -69,9 +66,9 @@ nav.main-nav .nav__link:hover {
     background-color: #444;
 }
 
-.main-content {
+/* .main-content {
     margin-top: 50px;
-}
+} */ 
 
 /* Footer Styles */
 .main-footer {
@@ -79,11 +76,11 @@ nav.main-nav .nav__link:hover {
     color: #fff;
     text-align: center;
     padding: 10px;
-    position: fixed; /* Make it fixed */
-    bottom: 0; /* Position it at the bottom */
-    left: 0; /* Align it to the left */
-    width: 100%; /* Make it span the full width */
-    z-index: 1000; /* Ensure it stays on top of other elements */
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
 }
 
 /* Mobile Styles for Hamburger Menu */
@@ -117,108 +114,14 @@ body {
 }
 
 .main-footer {
-    margin-top: auto;  /* Push footer to the bottom */
+    margin-top: auto;  
     position: relative;
 }
 
-/* Additional utility classes if needed */
+
 .hidden {
     display: none;
 }
-
-/* Register Page - Center the Title and Form 
-.register-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 20vh; /* Full height of the viewport 
-    padding-top: 10px;
-    text-align: center;0
-}
-
-.register-container h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.register-container form {
-    width: 100%;
-    max-width: 400px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.register-container form button {
-    width: 100%;
-    padding: 10px;
-    font-size: 1.1em;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.register-container form button:hover {
-    background-color: #444;
-} */
-
-/* Center the login title 
-.centered-title {
-    display: flex;
-    justify-content: center;   /* Center horizontally 
-    align-items: center;       /* Center vertically 
-    height: 15vh;              /* Full viewport height 
-    text-align: center;        /* Center text inside the <h2> 
-}
-
-h2 {
-    font-size: 2rem;
-    margin: 0;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 400px;
-    margin: 30px auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Style the form fields */
-form input {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    box-sizing: border-box;
-}
-
-/* Style the submit button */
-form button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #555;
-}*/
 
 /* Style for messages (success/error messages) */
 .message {
@@ -250,7 +153,7 @@ form button:hover {
 
 /* Mobile Responsiveness */
 @media screen and (max-width: 480px) {
-    /* Adjust the login form fields */
+    
     form input {
         font-size: 0.9rem;
     }
