@@ -9,91 +9,82 @@
 </head>
 
 <body>    
-    <nav class="main-nav">
-        <div class="logo">SpendWise</div>
-        <div class="nav__toggle">
-            <span></span>
-            <span></span>
-            <span></span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">SpendWise</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>  
+                    <li class="nav-item"><a class="nav-link" href="/register/">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/login/">Login</a></li>
+                </ul>
+            </div>
         </div>
-        <ul class="nav__list">
-            <li class="nav-item"><a href="/" class="nav__link">Home</a></li>
-            <li class="nav-item"><a href="/about/" class="nav__link">About</a></li>  
-            <li class="nav-item"><a href="/register/" class="nav__link">Register</a></li>
-            <li class="nav-item"><a href="/login/" class="nav__link">Login</a></li>
-        </ul>        
     </nav>
+    
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="text-center mb-4">Register</h2>
 
-    <div class="main-content">
-        <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <h2 class="text-center mb-4">Register</h2>
+                <!-- Registration form -->
+                <form method="post">
+                    {% csrf_token %}
 
-                    <!-- Registration form -->
-                    <form method="post">
-                        {% csrf_token %}
+                    <div class="form-group">
+                        <label for="id_username">Username:</label>
+                        <input type="text" name="username" id="id_username" class="form-control" required maxlength="150" autofocus>
+                        <small class="form-text text-muted">Required. 150 characters or fewer. Letters, digits, and @/./+/-/_ only.</small>
+                    </div>
 
-                        <div class="form-group">
-                            <label for="id_username">Username:</label>
-                            <input type="text" name="username" id="id_username" class="form-control" required maxlength="150" autofocus>
-                            <small class="form-text text-muted">Required. 150 characters or fewer. Letters, digits, and @/./+/-/_ only.</small>
-                        </div>
+                    <div class="form-group">
+                        <label for="id_email">Email:</label>
+                        <input type="email" name="email" id="id_email" class="form-control" required maxlength="320">
+                    </div>
 
-                        <div class="form-group">
-                            <label for="id_email">Email:</label>
-                            <input type="email" name="email" id="id_email" class="form-control" required maxlength="320">
-                        </div>
+                    <div class="form-group">
+                        <label for="id_password1">Password:</label>
+                        <input type="password" name="password1" id="id_password1" class="form-control" required autocomplete="new-password">
+                        <small class="form-text text-muted">
+                            <ul>
+                                <li>Your password must be at least 8 characters long.</li>
+                                <li>Your password can’t be a commonly used password.</li>
+                                <li>Your password can’t be entirely numeric.</li>
+                            </ul>
+                        </small>
+                    </div>
 
-                        <div class="form-group">
-                            <label for="id_password1">Password:</label>
-                            <input type="password" name="password1" id="id_password1" class="form-control" required autocomplete="new-password">
-                            <small class="form-text text-muted">
-                                <ul>
-                                    <li>Your password must be at least 8 characters long.</li>
-                                    <li>Your password can’t be a commonly used password.</li>
-                                    <li>Your password can’t be entirely numeric.</li>
-                                </ul>
-                            </small>
-                        </div>
+                    <div class="form-group">
+                        <label for="id_password2">Password confirmation:</label>
+                        <input type="password" name="password2" id="id_password2" class="form-control" required autocomplete="new-password">
+                        <small class="form-text text-muted">Enter the same password as before, for verification.</small>
+                    </div>
 
-                        <div class="form-group">
-                            <label for="id_password2">Password confirmation:</label>
-                            <input type="password" name="password2" id="id_password2" class="form-control" required autocomplete="new-password">
-                            <small class="form-text text-muted">Enter the same password as before, for verification.</small>
-                        </div>
+                    <div class="form-group">
+                        <label for="id_role">Role:</label>
+                        <select name="role" id="id_role" class="form-control">
+                            <option value="user" selected>User</option>
+                        </select>
+                    </div>
 
-                        <div class="form-group">
-                            <label for="id_role">Role:</label>
-                            <select name="role" id="id_role" class="form-control">
-                                <option value="user" selected>User</option>
-                            </select>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-block">Register</button>
-                    </form>
-                </div>
+                    <button type="submit" class="btn btn-primary btn-block">Register</button>
+                </form>
             </div>
         </div>
     </div>
 
-    <footer class="main-footer">
-        <p>&copy; 2025 SpendWise. All rights reserved.</p>
+    <footer class="bg-light py-3 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2025 SpendWise. All rights reserved.</p>
+        </div>
     </footer>
 
-    <script>
-        document.querySelector('.nav__toggle').addEventListener('click', toggleMenu);
-        function toggleMenu() {
-            console.log('Toggle menu clicked');
-            
-            const navList = document.querySelector('.nav__list');
-            
-            if (navList) {
-                navList.classList.toggle('show'); 
-            } else {
-                console.error('Nav list not found!');
-            }
-        }
-    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
