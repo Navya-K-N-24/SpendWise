@@ -4,21 +4,20 @@
 {% load static %}
 {% block content %}
 <div class="container mt-5">
-    <div class="row">
+    <div class="row text-center">
         <!-- Card 1: About SpendWise -->
         <div class="col-md-4 mb-4">
-            <div class="card">
-                <img src="{% static 'tracker/images/about_image3.jpg' %}" class="card-img-top" alt="SpendWise">
+            <div class="card shadow-sm">
+                <img src="{% static 'tracker/images/about_image2.jpg' %}" class="card-img-top" alt="SpendWise">
                 <div class="card-body">
-                    <h5 class="card-title">About SpendWise</h5>
-                    <p class="card-text">SpendWise is an easy-to-use platform designed to help you track your daily expenses and manage your finances with simplicity. Whether you're an individual or part of a family, SpendWise makes it easier to stay on top of your spending and make informed financial decisions.</p>
+                    <h5 class="card-title">About SpendWise?</h5>
+                    <p class="card-text">SpendWise is an easy-to-use platform designed to help you track your daily expenses and manage your finances with simplicity. Whether you're an individual or part of a family, SpendWise makes it easier to stay on top of your spending and make informed financial decisions at your finger tips.</p>
                 </div>
             </div>
         </div>
-
         <!-- Card 2: Key Features -->
         <div class="col-md-4 mb-4">
-            <div class="card">
+            <div class="card shadow-sm">
                 <img src="{% static 'tracker/images/about_image1.png' %}" class="card-img-top" alt="SpendWise">
                 <div class="card-body">
                     <h5 class="card-title">Key Features</h5>
@@ -34,18 +33,19 @@
 
         <!-- Card 3: Why SpendWise -->
         <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="{% static 'tracker/images/about_image2.jpg' %}" class="card-img-top" alt="SpendWise">
+            <div class="card shadow-sm">
+                <img src="{% static 'tracker/images/about_image2.jpg' %}" class="card-img-top" alt="SpendWise">
                 <div class="card-body">
                     <h5 class="card-title">Why SpendWise?</h5>
                     <p class="card-text">At SpendWise, we focus on simplicity and security. Whether you're just starting to manage your finances or you're already tracking your spending, SpendWise provides you with the tools to stay organized. We believe in empowering users to take control of their financial well-being, one transaction at a time.</p>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Call to Action Button -->
+    <!-- Call-to-Action Button -->
+    <div class="text-center mt-5">
         <a href="/register" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Register Now</a>
-    
     </div>
 </div>
 {% endblock %}
