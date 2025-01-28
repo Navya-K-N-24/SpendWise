@@ -121,13 +121,13 @@ body {
     display: none;
 }
 
-/* Register Page - Center the Title and Form */
+/* Register Page - Center the Title and Form 
 .register-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 20vh; /* Full height of the viewport */
+    height: 20vh; /* Full height of the viewport 
     padding-top: 10px;
     text-align: center;0
 }
@@ -157,15 +157,15 @@ body {
 
 .register-container form button:hover {
     background-color: #444;
-}
+} */
 
-/* Center the login title */
+/* Center the login title 
 .centered-title {
     display: flex;
-    justify-content: center;   /* Center horizontally */
-    align-items: center;       /* Center vertically */
-    height: 15vh;              /* Full viewport height */
-    text-align: center;        /* Center text inside the <h2> */
+    justify-content: center;   /* Center horizontally 
+    align-items: center;       /* Center vertically 
+    height: 15vh;              /* Full viewport height 
+    text-align: center;        /* Center text inside the <h2> 
 }
 
 h2 {
@@ -213,7 +213,7 @@ form button {
 
 form button:hover {
     background-color: #555;
-}
+}*/
 
 /* Style for messages (success/error messages) */
 .message {

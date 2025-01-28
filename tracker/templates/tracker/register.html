@@ -1,25 +1,117 @@
-{% extends "tracker/base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - SpendWise</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="/static/tracker/css/style.css"> 
+</head>
 
-{% block title %}Register - SpendWise{% endblock %}
+<body>    
+        <p>User is not authenticated.</p>  
+    
+    <nav class="main-nav">
+        <div class="logo">SpendWise</div>
+        <div class="nav__toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav__list">
+            <li class="nav-item"><a href="/" class="nav__link">Home</a></li>
+            <li class="nav-item"><a href="/about/" class="nav__link">About</a></li>  
+            
+                <li class="nav-item"><a href="/register/" class="nav__link">Register</a></li>
+                <li class="nav-item"><a href="/login/" class="nav__link">Login</a></li>
+            
+        </ul>        
+    </nav>
+    
+    <div class="main-content">
+        
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2 class="text-center">Register</h2>            
 
-{% block content %}
-<div class="register-container">
-    <h2>Register</h2>
+            <!-- Registration form -->
+            <form method="post" class="mt-4">
+                <input type="hidden" name="csrfmiddlewaretoken" value="IAgp5QXjFVJgSqGDKjfLGyAROAbLyFfYb8a0UzKJMBN47rzaOvIUOAqZ82nsDERv">
+                
+                <!-- Username Field -->
+                <div class="form-group">
+                    <label for="id_username">Username:</label>
+                    <input type="text" name="username" maxlength="150" autofocus required id="id_username">
+                    
+                    <small class="form-text text-muted">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</small>
+                    
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="id_email">Email:</label>
+                    <input type="email" name="email" maxlength="320" required id="id_email">
+                    
+                </div>
+
+                <!-- Password1 Field -->
+                <div class="form-group">
+                    <label for="id_password1">Password:</label>
+                    <input type="password" name="password1" autocomplete="new-password" required id="id_password1">
+                    
+                    <small class="form-text text-muted"><ul><li>Your password can’t be too similar to your other personal information.</li><li>Your password must contain at least 8 characters.</li><li>Your password can’t be a commonly used password.</li><li>Your password can’t be entirely numeric.</li></ul></small>
+                    
+                </div>
+
+                <!-- Password2 Field -->
+                <div class="form-group">
+                    <label for="id_password2">Password confirmation:</label>
+                    <input type="password" name="password2" autocomplete="new-password" required id="id_password2">
+                    
+                    <small class="form-text text-muted">Enter the same password as before, for verification.</small>
+                    
+                </div>
+
+                <!-- Role Field -->
+                <div class="form-group">
+                    <label for="id_role">Role:</label>
+                    <select name="role" id="id_role">
+  <option value="admin">Admin</option>
+
+  <option value="user" selected>User</option>
+
+</select>
+                    
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Register</button>
+            </form>
+        </div>
+    </div>
 </div>
 
-<!-- Block to display messages -->
-{% if messages %}
-<ul>
-    {% for message in messages %}
-    <li class="message {{ message.tags }}">{{ message }}</li>
-    {% endfor %}
-</ul>
-{% endif %}
+    </div>
 
-<!-- Registration form -->
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Register</button>
-</form>
-{% endblock %}
+    <footer class="main-footer">
+        <p>&copy; 2025 SpendWise. All rights reserved.</p>
+    </footer>
+
+    <!-- Move the script here, at the bottom of the body -->
+    <script>
+        document.querySelector('.nav__toggle').addEventListener('click', toggleMenu);
+        function toggleMenu() {
+            console.log('Toggle menu clicked');
+            
+            // Find the nav list
+            const navList = document.querySelector('.nav__list');
+            
+            if (navList) {
+                navList.classList.toggle('show'); // Toggle the visibility of the menu
+            } else {
+                console.error('Nav list not found!');
+            }
+        }
+    </script>
+</body>
+</html>
