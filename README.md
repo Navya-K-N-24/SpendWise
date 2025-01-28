@@ -26,6 +26,8 @@ Live site: [https://spendwisenavya-47b3e163d0fa.herokuapp.com/](https://spendwis
     - [High-Level Deployment Steps](#high-level-deployment-steps)
     - [Verification and Validation](#verification-and-validation)
     - [Security Measures](#security-measures)
+- [Device Responsivness across Devices](#device-responsivness-across-devices)
+- [Lighthouse Audit](#lighthouse-audit)- 
 - [AI Implementation and Orchestration](#ai-implementation-and-orchestration)
     - [Code Generation](#code-generation)
     - [Debugging](#debugging)
@@ -267,23 +269,29 @@ Add details of HTML validation:
 
 </details>
 
-#### Device Responsivness across Devices
-SpendWise is designed to be fully responsive across all device sizes, ensuring an optimal user experience whether accessed on mobile, tablet, or desktop. The design follows a mobile-first approach, based on the hypothesis that the majority of users maange expenses on their smartphones.
+<p align="right"><a href="#top">Back to top</a></p>
+<hr/>
 
-To achieve this, the layout adapts seamlessly to different screen sizes using a combination of Bootstrap's grid system and Flexbox, applied strategically to maintain consistency and usability across devices.
-![Responsivness across all devices](https://github.com/Navya-K-N-24/SpendWise/blob/c8f2490bb7646b83a8182a284f696a887a66daab/device_responsivness1.PNG)
-![responsivness of all pages](https://github.com/Navya-K-N-24/SpendWise/blob/c8f2490bb7646b83a8182a284f696a887a66daab/device_responsivness2.PNG)
+## Device Responsivness across Devices
+- SpendWise is designed to be fully responsive across all device sizes, ensuring an optimal user experience whether accessed on mobile, tablet, or desktop. The design follows a mobile-first approach, based on the hypothesis that the majority of users maange expenses on their smartphones.
 
-#### Lighthouse Audit
-Chrome Dev Tools Lighthouse was used to audit the site for response time and accessibility. Testing was done during MVP development after deploying v1 Homepage with only the cards of published scrapbooks, allowing more time for bug fixes.<br>
+- To achieve this, the layout adapts seamlessly to different screen sizes using a combination of Bootstrap's grid system and Flexbox, applied strategically to maintain consistency and usability across devices.
+- ![Responsivness across all devices](https://github.com/Navya-K-N-24/SpendWise/blob/c8f2490bb7646b83a8182a284f696a887a66daab/device_responsivness1.PNG)
+- ![responsivness of all pages](https://github.com/Navya-K-N-24/SpendWise/blob/c8f2490bb7646b83a8182a284f696a887a66daab/device_responsivness2.PNG)
 
-Screenshots of Lighthouse Audit on the Homepage 
+<p align="right"><a href="#top">Back to top</a></p>
+<hr/>
+
+## Lighthouse Audit
+- Chrome Dev Tools Lighthouse was used to audit the site for response time and accessibility. Testing was done during MVP development after deploying v1 Homepage with only the cards of published scrapbooks, allowing more time for bug fixes.<br>
+
+- Screenshots of Lighthouse Audit on the Homepage 
 
 Mobile:
-![image]([https://github.com/](https://github.com/Navya-K-N-24/SpendWise/blob/c8f2490bb7646b83a8182a284f696a887a66daab/lighthouse_testing_mobile.PNG))
+- ![image]([https://github.com/](https://github.com/Navya-K-N-24/SpendWise/blob/c8f2490bb7646b83a8182a284f696a887a66daab/lighthouse_testing_mobile.PNG))
 
 Tablet:
-![image]([https://github.com/](https://github.com/Navya-K-N-24/SpendWise/blob/c8f2490bb7646b83a8182a284f696a887a66daab/lighthouse_testing_tablet.PNG))
+- ![image]([https://github.com/](https://github.com/Navya-K-N-24/SpendWise/blob/c8f2490bb7646b83a8182a284f696a887a66daab/lighthouse_testing_tablet.PNG))
 
 <p align="right"><a href="#top">Back to top</a></p>
 <hr/>
