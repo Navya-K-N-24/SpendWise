@@ -1,222 +1,256 @@
-/* General Reset */
+/* Reset some default margin and padding for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Apply full height to body and html */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Base styles for the body and general font */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
-header {
-    background-color: #007BFF;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-nav {
+/* Navigation Styles */
+nav.main-nav {
     background-color: #333;
-    color: white;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
-    position: relative;
-}
-
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    transition: color 0.3s ease;  /* Smooth transition for hover effect */
-}
-
-nav a:hover {
-    color: #f0a500;
-    text-decoration: underline;
-}
-
-.main-nav {
-    background-color: #333;
-    padding: 10px 20px;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
+    position: fixed;
+    top: 0; /* Position it at the top */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Make it span the full width */
+    z-index: 1000; /* Ensure it stays on top of other elements */
 }
 
-.main-nav .logo {
+nav.main-nav .logo {
     color: #fff;
     font-size: 24px;
-    text-decoration: none;
 }
 
-/* Hamburger Menu */
-.nav__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-.nav__list.show {
-    display: flex !important; /* Make sure the menu displays when toggled */
-}
-
-.nav__toggle {
+nav.main-nav .nav__toggle {
     display: none;
+    flex-direction: column;
     cursor: pointer;
-    padding: 10px;
 }
 
-.nav__toggle span {
-    display: block;
-    width: 25px;
+nav.main-nav .nav__toggle span {
+    background-color: #fff;
     height: 3px;
-    margin: 5px auto;
-    background-color: white;
+    width: 25px;
+    margin: 4px 0;
 }
 
+nav.main-nav .nav__list {
+    display: flex;
+}
+
+nav.main-nav .nav__link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav.main-nav .nav__link:hover {
+    background-color: #444;
+}
+
+/* Footer Styles */
+.main-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed; /* Make it fixed */
+    bottom: 0; /* Position it at the bottom */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Make it span the full width */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+/* Mobile Styles for Hamburger Menu */
 @media screen and (max-width: 768px) {
-    .nav__list {
-        display: none; /* Hide the list by default */
+    nav.main-nav .nav__toggle {
+        display: flex;
+    }
+
+    nav.main-nav .nav__list {
+        display: none;
         flex-direction: column;
+        width: 100%;
+    }
+
+    nav.main-nav .nav__list.show {
+        display: flex;
+    }
+
+    nav.main-nav .nav__link {
+        padding: 10px;
         width: 100%;
         text-align: center;
     }
-
-    .nav__toggle {
-        display: block; /* Show the hamburger icon */
-    }
-
-    .nav__list.show {
-        display: flex;
-    }
 }
 
-/* Hero Section */
-.hero {
-    height: 60vh;
-    background-size: cover;
-    background-position: center;
-    color: #fff;
+/* Sticky Footer for all screens */
+body {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-footer {
+    margin-top: auto;  /* Push footer to the bottom */
     position: relative;
 }
 
-.hero-content {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    max-width: 80%;
+/* Additional utility classes if needed */
+.hidden {
+    display: none;
 }
 
-.hero h1 {
-    font-size: 2rem;
+/* Register Page - Center the Title and Form */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh; /* Full height of the viewport */
+    padding-top: 10px;
+    text-align: center;0
+}
+
+.register-container h2 {
+    font-size: 2em;
     margin-bottom: 10px;
 }
 
-/* Section */
-.section {
-    padding: 40px 20px;
-    text-align: center;
-    margin-top: 20px;
+.register-container form {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.section h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.section p {
-    font-size: 16px;
-    color: #555;
-}
-
-.content {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-}
-
-.message {
+.register-container form button {
+    width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid transparent;
-    border-radius: 4px;
+    font-size: 1.1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.register-container form button:hover {
+    background-color: #444;
+}
+
+/* Center the login title */
+.centered-title {
+    display: flex;
+    justify-content: center;   /* Center horizontally */
+    align-items: center;       /* Center vertically */
+    height: 15vh;              /* Full viewport height */
+    text-align: center;        /* Center text inside the <h2> */
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form fields */
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Style the submit button */
+form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Style for messages (success/error messages) */
+.message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #f5c6cb;
 }
 
 .message.success {
-    color: #155724;
     background-color: #d4edda;
+    color: #155724;
     border-color: #c3e6cb;
 }
 
-.message.error {
-    color: #721c24;
-    background-color: #f8d7da;
-    border-color: #f5c6cb;
+.message.info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border-color: #bee5eb;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
+.message.warning {
+    background-color: #fff3cd;
+    color: #856404;
+    border-color: #ffeeba;
 }
 
-/* Footer */
-.main-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 1024px) {
-    .container {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .hero {
-        height: 40vh;
-    }
-
-    .section {
-        padding: 20px;
-    }
-
-    form {
-        width: 90%;
-    }
-}
-
+/* Mobile Responsiveness */
 @media screen and (max-width: 480px) {
-    .hero {
-        height: 35vh;
+    /* Adjust the login form fields */
+    form input {
+        font-size: 0.9rem;
     }
 
-    .container {
-        width: 100%;
-    }
-
-    form {
-        width: 100%;
-        padding: 15px;
-    }
-
-    form input, form button {
+    form button {
         font-size: 0.9rem;
     }
 }
