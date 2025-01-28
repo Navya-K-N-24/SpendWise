@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,8 +9,6 @@
 </head>
 
 <body>    
-        <p>User is not authenticated.</p>  
-    
     <nav class="main-nav">
         <div class="logo">SpendWise</div>
         <div class="nav__toggle">
@@ -21,74 +19,62 @@
         <ul class="nav__list">
             <li class="nav-item"><a href="/" class="nav__link">Home</a></li>
             <li class="nav-item"><a href="/about/" class="nav__link">About</a></li>  
-            
-                <li class="nav-item"><a href="/register/" class="nav__link">Register</a></li>
-                <li class="nav-item"><a href="/login/" class="nav__link">Login</a></li>
-            
+            <li class="nav-item"><a href="/register/" class="nav__link">Register</a></li>
+            <li class="nav-item"><a href="/login/" class="nav__link">Login</a></li>
         </ul>        
     </nav>
-    
+
     <div class="main-content">
-        
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <h2 class="text-center">Register</h2>            
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h2 class="text-center mb-4">Register</h2>
 
-            <!-- Registration form -->
-            <form method="post" class="mt-4">
-                {% csrf_token %}
-                
-                <!-- Username Field -->
-                <div class="form-group">
-                    <label for="id_username">Username:</label>
-                    <input type="text" name="username" maxlength="150" autofocus required id="id_username">
-                    
-                    <small class="form-text text-muted">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</small>
-                    
-                </div>
+                    <!-- Registration form -->
+                    <form method="post">
+                        {% csrf_token %}
 
-                <!-- Email Field -->
-                <div class="form-group">
-                    <label for="id_email">Email:</label>
-                    <input type="email" name="email" maxlength="320" required id="id_email">
-                    
-                </div>
+                        <div class="form-group">
+                            <label for="id_username">Username:</label>
+                            <input type="text" name="username" id="id_username" class="form-control" required maxlength="150" autofocus>
+                            <small class="form-text text-muted">Required. 150 characters or fewer. Letters, digits, and @/./+/-/_ only.</small>
+                        </div>
 
-                <!-- Password1 Field -->
-                <div class="form-group">
-                    <label for="id_password1">Password:</label>
-                    <input type="password" name="password1" autocomplete="new-password" required id="id_password1">
-                    
-                    <small class="form-text text-muted"><ul><li>Your password can’t be too similar to your other personal information.</li><li>Your password must contain at least 8 characters.</li><li>Your password can’t be a commonly used password.</li><li>Your password can’t be entirely numeric.</li></ul></small>
-                    
-                </div>
+                        <div class="form-group">
+                            <label for="id_email">Email:</label>
+                            <input type="email" name="email" id="id_email" class="form-control" required maxlength="320">
+                        </div>
 
-                <!-- Password2 Field -->
-                <div class="form-group">
-                    <label for="id_password2">Password confirmation:</label>
-                    <input type="password" name="password2" autocomplete="new-password" required id="id_password2">
-                    
-                    <small class="form-text text-muted">Enter the same password as before, for verification.</small>
-                    
-                </div>
-                
-                <!-- Role Field -->
-                <div class="form-group">
-                    <label for="id_role">Role:</label>
-                    <select name="role" id="id_role">
-  
-  <option value="user" selected>User</option>
+                        <div class="form-group">
+                            <label for="id_password1">Password:</label>
+                            <input type="password" name="password1" id="id_password1" class="form-control" required autocomplete="new-password">
+                            <small class="form-text text-muted">
+                                <ul>
+                                    <li>Your password must be at least 8 characters long.</li>
+                                    <li>Your password can’t be a commonly used password.</li>
+                                    <li>Your password can’t be entirely numeric.</li>
+                                </ul>
+                            </small>
+                        </div>
 
-</select>
-                    
+                        <div class="form-group">
+                            <label for="id_password2">Password confirmation:</label>
+                            <input type="password" name="password2" id="id_password2" class="form-control" required autocomplete="new-password">
+                            <small class="form-text text-muted">Enter the same password as before, for verification.</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="id_role">Role:</label>
+                            <select name="role" id="id_role" class="form-control">
+                                <option value="user" selected>User</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Register</button>
+                    </form>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block">Register</button>
-            </form>
+            </div>
         </div>
-    </div>
-</div>
-
     </div>
 
     <footer class="main-footer">
