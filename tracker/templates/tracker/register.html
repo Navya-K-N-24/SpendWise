@@ -37,7 +37,7 @@
 
             <!-- Registration form -->
             <form method="post" class="mt-4">
-                <input type="hidden" name="csrfmiddlewaretoken" value="IAgp5QXjFVJgSqGDKjfLGyAROAbLyFfYb8a0UzKJMBN47rzaOvIUOAqZ82nsDERv">
+                {% csrf_token %}
                 
                 <!-- Username Field -->
                 <div class="form-group">
