@@ -276,7 +276,7 @@ Add details of HTML validation:
 - SpendWise is designed to be fully responsive across all device sizes, ensuring an optimal user experience whether accessed on mobile, tablet, or desktop. The design follows a mobile-first approach, based on the hypothesis that the majority of users maange expenses on their smartphones.
 
 - To achieve this, the layout adapts seamlessly to different screen sizes using a combination of Bootstrap's grid system and Flexbox, applied strategically to maintain consistency and usability across devices.
-- ![Responsivness across all devices](https://github.com/Navya-K-N-24/SpendWise/blob/c8f2490bb7646b83a8182a284f696a887a66daab/device_responsivness1.PNG)
+- ![Responsivness across all devices](https://github.com/Navya-K-N-24/SpendWise/blob/e8d369ad7b9da7a4b248704f1c18b3618dde9c0a/device_responsivness_1.PNG)
 - ![responsivness of all pages](https://github.com/Navya-K-N-24/SpendWise/blob/c8f2490bb7646b83a8182a284f696a887a66daab/device_responsivness2.PNG)
 
 <p align="right"><a href="#top">Back to top</a></p>
