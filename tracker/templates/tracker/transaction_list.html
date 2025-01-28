@@ -6,6 +6,10 @@
 {% block content %}
     <h1>All Transactions</h1>
     
+    <div class="add-transaction-btn">
+        <a href="{% url 'add_transaction' %}" class="btn btn-primary">Add Transaction</a>
+    </div>
+
     <table class="table">
         <thead>
             <tr>
@@ -16,6 +20,9 @@
                 <th>Actions</th>
             </tr>
         </thead>
+
+        
+
         <tbody>
             {% for transaction in transactions %}
             <tr>
