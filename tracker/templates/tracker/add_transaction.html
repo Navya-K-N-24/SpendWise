@@ -34,6 +34,8 @@
                 {{ form.description }}
             </div>
             <button type="submit">Add Transaction</button>
+            
+            <a href="{% url 'transaction_list' %}" class="btn btn-secondary">Cancel</a>
         </form>
     </div>
 {% endblock %} an you please style it with bootstrap to have good view across smaller devices
