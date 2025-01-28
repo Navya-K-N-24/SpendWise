@@ -277,7 +277,7 @@ Add details of HTML validation:
 
 - To achieve this, the layout adapts seamlessly to different screen sizes using a combination of Bootstrap's grid system and Flexbox, applied strategically to maintain consistency and usability across devices.
 - ![Responsivness across all devices](https://github.com/Navya-K-N-24/SpendWise/blob/e8d369ad7b9da7a4b248704f1c18b3618dde9c0a/device_responsivness_1.PNG)
-- ![responsivness of all pages](https://github.com/Navya-K-N-24/SpendWise/blob/c8f2490bb7646b83a8182a284f696a887a66daab/device_responsivness2.PNG)
+- ![responsivness of all pages](https://github.com/Navya-K-N-24/SpendWise/blob/a6682bacf156a4a86545aa0551842582b571ddf4/device_responsivness_2.PNG)
 
 <p align="right"><a href="#top">Back to top</a></p>
 <hr/>
