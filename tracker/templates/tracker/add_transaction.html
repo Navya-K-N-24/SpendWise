@@ -4,36 +4,36 @@
 {% block title %}Add Transaction{% endblock %}
 
 {% block content %}
-    <div class="container mt-5">
-        <h1 class="text-center">Add Transaction</h1>
+    <div class="container">
+        <h1>Add Transaction</h1>
 
         {% if messages %}
-            <div class="alert alert-info mt-4">
+            <div class="messages">
                 {% for message in messages %}
                     <p class="{{ message.tags }}">{{ message }}</p>
                 {% endfor %}
             </div>
         {% endif %}
 
-        <form method="POST" class="mt-4">
+        <form method="POST">
             {% csrf_token %}
             <div class="form-group">
                 <label for="id_date">Transaction Date:</label>
-                {{ form.date|add_class:"form-control" }}
+                {{ form.date }}
             </div>
             <div class="form-group">
                 <label for="id_amount">Amount Spent:</label>
-                {{ form.amount|add_class:"form-control" }}
+                {{ form.amount }}
             </div>
             <div class="form-group">
                 <label for="id_category">Category:</label>
-                {{ form.category|add_class:"form-control" }}
+                {{ form.category }}
             </div>
             <div class="form-group">
                 <label for="id_description">Description:</label>
-                {{ form.description|add_class:"form-control" }}
+                {{ form.description }}
             </div>
-            <button type="submit" class="btn btn-primary btn-block">Add Transaction</button>
+            <button type="submit">Add Transaction</button>
         </form>
     </div>
-{% endblock %}
+{% endblock %} an you please style it with bootstrap to have good view across smaller devices

@@ -34,6 +34,7 @@ nav.main-nav {
     left: 0; /* Align it to the left */
     width: 100%; /* Make it span the full width */
     z-index: 1000; /* Ensure it stays on top of other elements */
+    margin-bottom: 20px;
 }
 
 nav.main-nav .logo {
@@ -66,6 +67,10 @@ nav.main-nav .nav__link {
 
 nav.main-nav .nav__link:hover {
     background-color: #444;
+}
+
+.main-content {
+    margin-top: 50px;
 }
 
 /* Footer Styles */
